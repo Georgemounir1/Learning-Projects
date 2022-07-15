@@ -1,0 +1,158 @@
+/*global */
+:root {
+    background-color: #eee;
+}
+*{
+    font-family: 'Cairo', sans-serif;
+
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+
+    font-family: 'Work Sans', sans-serif;
+
+}
+/*headings */ 
+.name{
+    color: rgba(49, 24, 95, 0.938);
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+display: inline;
+}
+.lname{
+color: rgba(17, 15, 15, 0.76);
+justify-content: center;
+align-items: center;
+display: inline;
+
+}
+.job {
+    color: darkslateblue;
+    display:flex ;
+    justify-content:center ;
+    align-items: center;
+    margin-top: 2%;
+}
+/* Animation  Break Line 1*/ 
+.divider-custom-line{
+width: 8em;
+height: .5em;
+border-radius: 20px;
+background-color: #2C3E50;
+transition: .9s;
+    }
+.divider-custom-line:hover {
+    background-color: #182c3f ;
+    width: 5em;
+}
+.divider-custom-icon{
+    width: 20px;
+    height: 20px;
+    transition: .9s;
+}
+.divider-custom-icon:hover {
+    transform: rotatey(3turn) scale(2) ; 
+}
+/* Animation Break Line 2 */ 
+.divider-custom-line2{
+    width: 2em;
+    height: .3em;
+    border-radius: 20px;
+    background-color: #2C3E50;
+    transition: .9s;
+        }
+    .divider-custom-line2:hover {
+        background-color: #182c3f ;
+        width: 4em;
+    }
+    .divider-custom-icon2{
+        width: 15px;
+        height: 15px;
+        transition: .5s;
+    }
+    .divider-custom-icon2:hover {
+        transform: rotatey(2.5turn) scale(1.5) ; 
+    }
+/*animation Nav */ 
+.logo {
+transition: .9s;
+}
+.logo:hover {
+    margin: 7px;
+    transform: rotateZ(3turn) scale(2);
+}
+.home {
+    transition-timing-function: ease;
+    transition: .5s;
+    position: relative;
+    top:0 ; 
+    bottom: 0;
+}
+.home:hover {
+top: -10px ; 
+transform: scale(1.2);
+}
+.porto h2 {
+    color:#182c3f ; 
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+/*flipped Skills Card */
+.flipcard {
+  position: relative;
+  width: 17em;
+  height: 300px;
+  perspective: 700px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.card-fram {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.flipcard:hover .card-fram {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+
+.front,
+.back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  line-height: 300px;
+  color: #1c6c9b3b;
+  text-align: center;
+  font-size: 60px;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+
+.back {
+  background: rgb(34, 34, 148) ;
+  color: white;
+  transform: rotateY( 180deg );
+}
+.back h3 {
+    margin-top: 10px;
+}
+
+.front img {
+    width: 3.5em;
+    height: 300px;
+    background-size:auto ;
+}
+.text-work {
+    margin: 3px;
+    padding: 2px;
+}
